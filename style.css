@@ -459,18 +459,18 @@ footer {
   }
   .save-up {
     margin: 0;
-    width: 162px;
-    height: 60px;
+    width: 102px;
+    height: 40px;
     top: 65%;
     left: 62%;
   }
   .save-up-text-1 {
     margin: 0;
-    font-size: 1rem;
+    font-size: 10px;
   }
   .save-up-text-2 {
     margin: 0;
-    font-size: 1.3rem;
+    font-size: 10px;
   }
   .footer-texts {
     padding: 0 10px;
@@ -487,6 +487,9 @@ footer {
   }
   hr {
     width: 200px;
+  }
+  footer {
+    width: 100%;
   }
 }
 /* Medium to Tablet Devices CSS*/
@@ -608,6 +611,9 @@ footer {
     padding: 0 10px;
     text-align: center;
   }
+  footer {
+    width: 100%;
+  }
 }
 /* Ultra Small Devices CSS */
 @media screen and (max-width: 400px) {
@@ -715,18 +721,18 @@ footer {
   }
   .save-up {
     margin: 0;
-    width: 162px;
-    height: 60px;
+    width: 81px;
+    height: 30px;
     top: 65%;
     left: 62%;
   }
   .save-up-text-1 {
     margin: 0;
-    font-size: 1rem;
+    font-size: 10px;
   }
   .save-up-text-2 {
     margin: 0;
-    font-size: 1.3rem;
+    font-size: 10px;
   }
   .footer-texts {
     padding: 0 10px;
@@ -743,5 +749,8 @@ footer {
   }
   hr {
     width: 100px;
+  }
+  footer {
+    width: 100%;
   }
 }
