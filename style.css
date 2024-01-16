@@ -335,6 +335,11 @@ footer {
 }
 /* Small Devices CSS */
 @media screen and (max-width: 600px) {
+  body,
+  main {
+    maragin-right: 0;
+    padding-right: 0;
+  }
   header {
     padding: 5px 10px;
   }
@@ -343,6 +348,10 @@ footer {
   }
   nav ul {
     display: none;
+  }
+  nav ul > li {
+    list-style: none;
+    margin-right: 5px;
   }
   .hamburger {
     display: block;
@@ -354,6 +363,150 @@ footer {
   .banner-form form {
     height: 300px;
     width: 287px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .banner-form input,
+  select,
+  button {
+    margin: 5px;
+  }
+  .banner-title {
+    font-family: Mulish;
+    font-size: 1.375rem;
+    font-weight: 800;
+    margin-top: 10px;
+  }
+  .banner-description {
+    padding: 0 10px;
+  }
+  .popular-tours {
+    flex-direction: column;
+    margin: 20px 20px;
+  }
+  .section-title {
+    margin-bottom: 10px;
+  }
+  .popular-tours-text {
+    margin-right: 0;
+    margin-bottom: 60px;
+  }
+  .destination-images {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  .destination-images img {
+    height: 298px;
+  }
+  .destination-texts {
+    align-items: center;
+    text-align: center;
+    padding: 0 10px;
+  }
+  .features {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin: 15px;
+  }
+  .features-text p {
+    align-items: center;
+    text-align: center;
+    padding: 0 10px;
+  }
+  .features-box {
+    width: 95%;
+    height: 100%;
+  }
+  .features-box-2 {
+    width: 95%;
+    height: 100%;
+  }
+  .newsletter {
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px;
+  }
+  .newsletter-subscribe input {
+    border-radius: 8px;
+    background: rgba(19, 19, 24, 0.05);
+    width: 200px;
+    height: 52px;
+    border: none;
+    padding-left: 5px;
+  }
+  .newsletter-subscribe button {
+    border-radius: 8px;
+    background: var(--primary-color);
+    width: 200px;
+    height: 52px;
+  }
+  .newsletter-subscribe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+  .newsletter-form {
+    margin: 10px;
+    width: 100%;
+  }
+  .newsletter-images img {
+    margin: 10px;
+    width: 100%;
+  }
+  .save-up {
+    margin: 0;
+    width: 162px;
+    height: 60px;
+    top: 65%;
+    left: 62%;
+  }
+  .save-up-text-1 {
+    margin: 0;
+    font-size: 1rem;
+  }
+  .save-up-text-2 {
+    margin: 0;
+    font-size: 1.3rem;
+  }
+  .footer-texts {
+    padding: 0 10px;
+  }
+  .apartment-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin: 10px;
+  }
+  .best-properties-texts p {
+    padding: 0 10px;
+    text-align: center;
+  }
+  hr {
+    width: 200px;
+  }
+}
+/* Medium to Tablet Devices CSS*/
+@media screen and (min-width: 601px) and (max-width: 960px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  header {
+    padding: 20px;
+  }
+  nav {
+    flex-direction: column;
+  }
+  .banner {
+    margin: 0 10px;
+  }
+  .banner-form form {
+    height: 300px;
+    max-width: 600px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -456,20 +609,37 @@ footer {
     text-align: center;
   }
 }
-/* Medium to Tablet Devices CSS*/
-@media screen and (min-width: 600px) and (max-width: 960px) {
+/* Ultra Small Devices CSS */
+@media screen and (max-width: 400px) {
+  body,
+  main {
+    maragin-right: 0;
+    padding-right: 0;
+  }
   header {
-    padding: 20px;
+    padding: 5px 10px;
   }
   nav {
-    flex-direction: column;
+    margin: 0 0;
+  }
+  nav ul {
+    display: none;
+  }
+  nav ul > li {
+    list-style: none;
+    padding-right: 15px;
+  }
+  .hamburger {
+    display: block;
+    margin-top: 18px;
   }
   .banner {
     margin: 0 10px;
+    width: 100%;
   }
   .banner-form form {
-    height: 300px;
-    width: 600px;
+    height: 250px;
+    width: 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -491,7 +661,7 @@ footer {
   }
   .popular-tours {
     flex-direction: column;
-    margin: 20px 20px;
+    margin: 10px 10px;
   }
   .section-title {
     margin-bottom: 10px;
@@ -565,10 +735,13 @@ footer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
-    margin: 10px;
+    margin: 5px;
   }
   .best-properties-texts p {
-    padding: 0 10px;
+    padding: 0 5px;
     text-align: center;
+  }
+  hr {
+    width: 100px;
   }
 }
