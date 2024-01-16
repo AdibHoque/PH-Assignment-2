@@ -1,0 +1,350 @@
+/* Root */
+:root {
+  --primary-color: #ff5400;
+  --secondary-color: #131318;
+}
+/* Shared Styles */
+.primary-color {
+  color: var(--primary-color);
+}
+.section-title {
+  color: var(--secondary-color);
+  text-align: center;
+  font-family: Mulish;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+.section-description {
+  color: rgba(19, 19, 24, 0.7);
+  font-family: Mulish;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.btn-primary {
+  color: #fff;
+  text-align: center;
+  font-family: Mulish;
+  font-size: 1.25rem;
+  font-weight: 800;
+  border-radius: 8px;
+  background: #ff5400;
+  border: none;
+  padding: 10px 25px;
+  margin-top: 10px;
+}
+/* Header Styles */
+/* Nav Styles */
+nav {
+  margin: 0px 90px;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav ul > li {
+  list-style: none;
+  margin-right: 30px;
+}
+.logo {
+  display: flex;
+}
+.logo img {
+  width: 56px;
+  height: 48px;
+}
+.nav-title {
+  color: #131318;
+  font-family: Mulish;
+  font-size: 2.25rem;
+  font-weight: 800;
+  margin-top: 0;
+}
+.hamburger {
+  display: none;
+}
+/* Banner Styles */
+.banner {
+  margin: 0 60px;
+  border-radius: 16px;
+  background: linear-gradient(
+      180deg,
+      rgba(19, 19, 24, 0.8) 0%,
+      rgba(19, 19, 24, 0) 100%
+    ),
+    url("Images/Group 13 (1) (1).png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.banner-title {
+  color: #fff;
+  font-family: Mulish;
+  font-size: 64px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+.banner-description {
+  color: #fff;
+  font-family: Mulish;
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 0 250px;
+  text-align: center;
+  margin-top: 0;
+}
+.banner-form form {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.3);
+  height: 84px;
+  width: 800px;
+  border-radius: 8px;
+}
+.banner-form input,
+select {
+  background-color: #fff;
+  color: rgba(19, 19, 24, 0.5);
+  width: 174px;
+  height: 52px;
+  border-radius: 8px;
+  border: none;
+  padding-left: 10px;
+  margin-right: 10px;
+}
+.banner-form button {
+  background-color: var(--primary-color);
+  color: #fff;
+  width: 174px;
+  height: 52px;
+  border-radius: 8px;
+  border: none;
+  text-align: center;
+  font-family: Mulish;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+/* Main Styles */
+
+.popular-tours {
+  display: flex;
+  margin: 60px 60px;
+}
+.popular-tours li {
+  color: rgba(19, 19, 24, 0.7);
+  font-family: Mulish;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 26px;
+}
+.popular-tours-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: 70px;
+}
+.destination-texts {
+  align-items: center;
+  text-align: center;
+  padding: 0 300px;
+}
+.destination-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+.destination-images img {
+  width: 100%;
+}
+.grid-item-1 {
+  position: relative;
+}
+.grid-item-2 {
+  position: relative;
+}
+.grid-item-3 {
+  position: relative;
+}
+.grid-item-4 {
+  position: relative;
+}
+.grid-item-5 {
+  position: relative;
+}
+.grid-item-6 {
+  position: relative;
+}
+.grid-item-7 {
+  position: relative;
+}
+.grid-item-text {
+  color: #fff;
+  text-align: center;
+  font-family: Mulish;
+  font-size: 28px;
+  font-weight: 800;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.features-box {
+  width: 573px;
+  height: 284px;
+  flex-shrink: 0;
+  border-radius: 16px;
+  border: 1px solid rgba(251, 181, 99, 0.2);
+  background: rgba(251, 181, 99, 0.05);
+  padding: 10px;
+}
+.features-box-2 {
+  width: 573px;
+  height: 284px;
+  border-radius: 16px;
+  border: 1px solid rgba(41, 206, 246, 0.2);
+  background: rgba(41, 206, 246, 0.05);
+  padding: 10px;
+}
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 60px;
+}
+.features-text p {
+  align-items: center;
+  text-align: center;
+  padding: 0 300px;
+  margin-top: 0;
+}
+/* Footer Styles */
+
+/* Small Devices CSS */
+@media screen and (max-width: 600px) {
+  header {
+    padding: 5px 10px;
+  }
+  nav {
+    margin: 0 0;
+  }
+  nav ul {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+    margin-top: 18px;
+  }
+  .banner {
+    margin: 0 10px;
+  }
+  .banner-form form {
+    height: 300px;
+    width: 287px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .banner-form input,
+  select,
+  button {
+    margin: 5px;
+  }
+  .banner-title {
+    font-family: Mulish;
+    font-size: 1.375rem;
+    font-weight: 800;
+    margin-top: 10px;
+  }
+  .banner-description {
+    padding: 0 10px;
+  }
+  .popular-tours {
+    flex-direction: column;
+    margin: 20px 20px;
+  }
+  .section-title {
+    margin-bottom: 10px;
+  }
+  .popular-tours-text {
+    margin-right: 0;
+    margin-bottom: 60px;
+  }
+  .destination-images {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  .destination-texts {
+    align-items: center;
+    text-align: center;
+    padding: 0 10px;
+  }
+  .features {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin: 15px;
+  }
+  .features-text p {
+    align-items: center;
+    text-align: center;
+    padding: 0 10px;
+  }
+  .features-box {
+    width: 95%;
+    height: 100%;
+  }
+  .features-box-2 {
+    width: 95%;
+    height: 100%;
+  }
+}
+/* Medium to Tablet Devices CSS*/
+@media screen and (min-width: 576px) and (max-width: 960px) {
+  header {
+    padding: 20px;
+  }
+  nav {
+    flex-direction: column;
+  }
+  .banner {
+    margin: 0 10px;
+  }
+  .banner-form form {
+    height: 300px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .banner-form input,
+  select,
+  button {
+    margin: 5px;
+  }
+  .banner-title {
+    font-family: Mulish;
+    font-size: 1.375rem;
+    font-weight: 800;
+    margin-top: 10px;
+  }
+  .banner-description {
+    padding: 0 10px;
+  }
+}
