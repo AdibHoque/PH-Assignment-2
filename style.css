@@ -305,10 +305,21 @@ select {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
+  margin: 30px;
 }
 .apartment-images img {
   width: 100%;
+  width: 100%;
   border-radius: 16px;
+}
+.apartment-images h3,
+p {
+  margin: 0;
+  padding-left: 5px;
+}
+.best-properties-texts p {
+  padding: 0 200px;
+  text-align: center;
 }
 /* Footer Styles */
 footer {
@@ -434,9 +445,19 @@ footer {
   .footer-texts {
     padding: 0 10px;
   }
+  .apartment-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin: 10px;
+  }
+  .best-properties-texts p {
+    padding: 0 10px;
+    text-align: center;
+  }
 }
 /* Medium to Tablet Devices CSS*/
-@media screen and (min-width: 576px) and (max-width: 960px) {
+@media screen and (min-width: 600px) and (max-width: 960px) {
   header {
     padding: 20px;
   }
@@ -467,5 +488,87 @@ footer {
   }
   .banner-description {
     padding: 0 10px;
+  }
+  .popular-tours {
+    flex-direction: column;
+    margin: 20px 20px;
+  }
+  .section-title {
+    margin-bottom: 10px;
+  }
+  .popular-tours-text {
+    margin-right: 0;
+    margin-bottom: 60px;
+  }
+  .destination-images {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  .destination-images img {
+    height: 298px;
+  }
+  .destination-texts {
+    align-items: center;
+    text-align: center;
+    padding: 0 10px;
+  }
+  .features {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin: 15px;
+  }
+  .features-text p {
+    align-items: center;
+    text-align: center;
+    padding: 0 10px;
+  }
+  .features-box {
+    width: 95%;
+    height: 100%;
+  }
+  .features-box-2 {
+    width: 95%;
+    height: 100%;
+  }
+  .newsletter {
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px;
+  }
+  .newsletter-form {
+    margin: 10px;
+    width: 100%;
+  }
+  .newsletter-images img {
+    margin: 10px;
+    width: 100%;
+  }
+  .save-up {
+    margin: 0;
+    width: 162px;
+    height: 60px;
+    top: 65%;
+    left: 62%;
+  }
+  .save-up-text-1 {
+    margin: 0;
+    font-size: 1rem;
+  }
+  .save-up-text-2 {
+    margin: 0;
+    font-size: 1.3rem;
+  }
+  .footer-texts {
+    padding: 0 10px;
+  }
+  .apartment-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin: 10px;
+  }
+  .best-properties-texts p {
+    padding: 0 10px;
+    text-align: center;
   }
 }
