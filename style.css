@@ -658,12 +658,7 @@ footer {
   }
 }
 /* Ultra Small Devices CSS */
-@media screen and (max-width: 400px) {
-  body,
-  main {
-    maragin-right: 0;
-    padding-right: 0;
-  }
+@media screen and (max-width: 450px) {
   header {
     padding: 5px 10px;
   }
